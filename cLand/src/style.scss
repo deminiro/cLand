@@ -1,4 +1,5 @@
 $lightblueColor: #81CFE0;
+$purpleColor: #B687BF;
 
 .margin-zero {
   margin: 0;
@@ -43,6 +44,31 @@ body {
   color: #ffffff;
 }
 
+.header-top-container__squares {
+  display: flex;
+  justify-content: center;
+  padding-left: 160px;
+}
+
+.header-top-container__squares>div {
+  width: 28px;
+  height: 28px;
+  position: relative;
+}
+
+.header-squares__yellow {
+  background-color: #F1C40F;
+  top: 21px;
+  z-index: 1;
+}
+
+.header-squares__purple {
+  background-color: $purpleColor;
+  top: 36px;
+  right: 14px;
+  z-index: 2;
+}
+
 .header-top-container__authorize {
   padding-left: 19%
 }
@@ -61,7 +87,7 @@ body {
   margin-left: 21px;
   height: 43px;
   width: 136px;
-  background-color: #B687BF;
+  background-color: $purpleColor;
   border: none;
 }
 
@@ -142,4 +168,40 @@ body {
   height: 251px;
   margin-left: 454px;
   margin-top: -229px;
+}
+
+// awards
+.main__awards {
+  text-align: center;
+  padding-top: 151px;
+}
+
+.main-awards__headline {
+  word-spacing: 0.001rem;
+  margin-left: 8px;
+}
+
+.main-awards__logos {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-top: 120px;
+}
+
+.main-awards-logos__li {
+  width: 100px;
+  height: 67px;
+  background-color: lightcoral;
+  margin-right: 110px;
+}
+
+.main-awards__button {
+  width: 160px;
+  font-size: 17px;
+  height: 45px;
+  margin-top: 70px;
+  background-color: $purpleColor;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
 }

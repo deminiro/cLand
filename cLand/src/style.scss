@@ -1,3 +1,145 @@
+$lightblueColor: #81CFE0;
+
+.margin-zero {
+  margin: 0;
+}
+
+.padding-zero {
+  padding: 0;
+}
+
 body {
-    background-color: red;
+  width: 100%;
+}
+// header
+.header {
+  background-color: $lightblueColor;
+}
+
+// top
+.header__top-container {
+  display: grid;
+  grid-template-columns: 27% 35% 38%;
+  padding-top: 55px;
+  padding-bottom: 70px;
+}
+
+.header-top-container__burger {
+  text-align: center;
+  padding-left: 14%;
+  padding-top: 4px;
+}
+
+.header-burger__element {
+  border: none;
+  background: none;
+}
+
+.header-burger__element>i {
+  font-size: 220%;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.header-top-container__authorize {
+  padding-left: 19%
+}
+
+.header-autorize__buttons {
+  font-size: 17px;
+
+}
+
+.header-autorize__sign-in {
+  background: none;
+  border: none
+}
+
+.header-autorize__sign-up {
+  margin-left: 21px;
+  height: 43px;
+  width: 136px;
+  background-color: #B687BF;
+  border: none;
+}
+
+// main
+// top
+.main-top__container {
+  background-color: $lightblueColor;
+  display: grid;
+  justify-content: center;
+}
+
+.main-top__headline {
+  text-align: center;
+}
+
+.main-top-headline__top {
+  padding-top: 4px;
+  font-size: 26px;
+  word-spacing: -0.03rem;
+}
+
+.main-top-headline__container {
+  text-align: center;
+  padding: 25px 0 17px 24%;
+  font-size: 16px;
+}
+
+.main-top-headline__text {
+  width: 67%;
+  word-spacing: -0.02rem;
+}
+
+.main-top__sign-up {
+  text-align: center;
+  padding-top: 3px;
+}
+
+.main-top__button {
+  font-size: 17px;
+  width: 136px;
+  height: 45px;
+  margin-right: 7px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #fff;
+  color: $lightblueColor;
+}
+
+.main-top__examples {
+  display: grid;
+  justify-content: center;
+  height: 440px;
+  padding-top: 40px;
+}
+
+.main-top__examples>div {
+  box-shadow: 0 15px 20px rgba(0, 0, 0, .5);
+  position: relative;
+}
+
+.main-top-examples__big-container {
+  background-color: #E2B853;
+  height: 405px;
+  width: 686px;
+}
+
+.main-top-examples__medium-container {
+  background-color: #B687BF;
+  width: 428px;
+  height: 284px;
+  margin-left: 140px;
+  margin-top: -229px;
+}
+
+.main-top-examples__small-container {
+  background-color: #FFECE3;
+  width: 155px;
+  height: 251px;
+  margin-left: 454px;
+  margin-top: -229px;
 }

@@ -1,5 +1,14 @@
 $lightblueColor: #81CFE0;
 $purpleColor: #B687BF;
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin marginTopWidth($marginTop, $width) {
+  margin-top: $marginTop;
+  width: $width;
+}
 
 .margin-zero {
   margin: 0;
@@ -51,8 +60,7 @@ body {
 }
 
 .header-top-container__squares>div {
-  width: 28px;
-  height: 28px;
+  @include widthHeight(28px, 28px);
   position: relative;
 }
 
@@ -85,8 +93,7 @@ body {
 
 .header-autorize__sign-up {
   margin-left: 21px;
-  height: 43px;
-  width: 136px;
+  @include widthHeight(136px, 43px);
   background-color: $purpleColor;
   border: none;
 }
@@ -127,8 +134,7 @@ body {
 
 .main-top__button {
   font-size: 17px;
-  width: 136px;
-  height: 45px;
+  @include widthHeight(136px, 45px);
   margin-right: 7px;
   border: 0;
   border-radius: 3px;
@@ -150,22 +156,19 @@ body {
 
 .main-top-examples__big-container {
   background-color: #E2B853;
-  height: 405px;
-  width: 686px;
+  @include widthHeight(686px, 405px);
 }
 
 .main-top-examples__medium-container {
   background-color: #B687BF;
-  width: 428px;
-  height: 284px;
+  @include widthHeight(428px, 284px);
   margin-left: 140px;
   margin-top: -229px;
 }
 
 .main-top-examples__small-container {
   background-color: #FFECE3;
-  width: 155px;
-  height: 251px;
+  @include widthHeight(155px, 251px);
   margin-left: 454px;
   margin-top: -229px;
 }
@@ -174,6 +177,7 @@ body {
 .main__awards {
   text-align: center;
   padding-top: 151px;
+  padding-bottom: 62px;
 }
 
 .main-awards__headline {
@@ -184,24 +188,151 @@ body {
 .main-awards__logos {
   display: flex;
   list-style: none;
-  justify-content: center;
-  padding-top: 120px;
+  padding-top: 115px;
+  padding-left: 16.5%;
 }
 
 .main-awards-logos__li {
-  width: 100px;
-  height: 67px;
-  background-color: lightcoral;
-  margin-right: 110px;
+  margin-right: 5.7%;
+}
+
+.awards__betAwards-li {
+  @include widthHeight(152px, 102px);
+}
+
+.awards__betAwards-li>img {
+  margin-top: -12px;
+}
+
+.awards__nothern-li{
+  margin-left: 4%;
+}
+
+.awards__thedrum-li {
+  margin-left: 1.5%;
 }
 
 .main-awards__button {
-  width: 160px;
+  @include widthHeight(160px, 45px);
   font-size: 17px;
-  height: 45px;
-  margin-top: 70px;
+  margin-top: 40px;
   background-color: $purpleColor;
   color: #fff;
   border: 0;
   border-radius: 4px;
+}
+
+// amazing awards
+.main__amazing-things {
+  margin: 0;
+  background-color: #E5E5E5;
+  padding-top: 130px;
+  padding-bottom: 60px;
+}
+
+.amazing-things__headline {
+  margin: 0;
+  text-align: center;
+  margin-left: -10px;
+}
+
+.amazing-things__ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin-top: 89px;
+  font-size: 16px;
+  padding-left: 15%;
+  grid-column-gap: 35px;
+  grid-row-gap: 97px;
+  margin-bottom: 57px;
+}
+
+.amazing-things-options-li__container {
+  display: grid;
+  grid-template-columns: 11% 89%;
+  grid-column-gap: 11px;
+}
+
+.amazing-things-options-li-container-text-container__headline {
+  margin: 0;
+}
+
+.amazing-things-options-li-container-text-container__paragraph {
+  margin-top: 22px;
+  word-spacing: 0.105rem;
+  letter-spacing: 0.001rem;
+  font-size: 15px;
+  line-height: 1rem;
+}
+
+.amazing-thinks__like-img {
+  @include marginTopWidth(1px, 42px)
+}
+
+.amazing-thinks__smile-img {
+  @include marginTopWidth(4px, 42px)
+}
+
+.amazing-thinks__phone-img {
+  @include marginTopWidth(4px, 39px)
+}
+
+.amazing-thinks__desktop-img {
+  @include marginTopWidth(0px, 51px)
+}
+
+.amazing-things-options-li-container-text-container__headline {
+  font-size: 15px;
+}
+
+.main-amazing-things__support {
+  display: grid;
+  justify-content: center;
+  padding-left: 19.3%;
+}
+
+.main-amazing-things-support__container {
+  width: 77.4%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid #000;
+  padding-top: 61px;
+}
+
+.main-amazing-things-support__text {
+  padding-top: 29px;
+}
+
+.amazing-things__live-support {
+  margin-top: 17px;
+  word-spacing: 0.105rem;
+  letter-spacing: 0.001rem;
+  font-size: 15px;
+  line-height: 1rem;
+  width: 95%
+}
+
+.main-amazing-things-support__bunner {
+  padding-left: 1%;
+}
+
+.main-amazing-things-support-bunner__button {
+  @include widthHeight(413px, 152px);
+  border: 0;
+  padding: 0;
+  background: #b687bf;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.main-amazing-things-support-bunner-button-first {
+  font-size: 57px;
+  margin: 0;
+}
+
+.main-amazing-things-support-bunner-button-second {
+  font-size: 24px;
+  margin: 30px 0 0 10px
 }

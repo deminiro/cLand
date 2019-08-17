@@ -388,3 +388,65 @@ body {
   margin-top: 4px;
   margin-left: 1%;
 }
+
+// container 'basic introduction'
+.footer__form {
+  background-color: #85CAD9;
+  text-align: center;
+  display: grid;
+  padding-top: 73px;
+  padding-bottom: 42px;
+}
+
+.footer-form__container-inputs {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 31% 31%;
+  grid-column-gap: 10%;
+  padding-top: 37px;
+}
+
+.footer-form__inputs {
+  font-weight: bold;
+  border: 0;
+  color: #D7E8EF;
+  background-color: #85caD9;
+  border-bottom: 2px solid #D7E8EF;
+  font-size: 20px;
+}
+
+.footer-form__inputs::placeholder {
+  color: #D7E8EF;
+}
+
+.footer-form__headline {
+  margin: 0
+}
+
+.footer-form__input-name {
+}
+
+.footer-form__input-email {
+}
+
+.footer-form__input-subject {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  margin-top: 46px;
+}
+
+.footer-form__input-message {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.footer-form__button {
+  @include widthHeight(136px, 43px);
+  background-color: #FFFFFF;
+  color: #85caD9;
+  border: 0;
+  margin-top: 51px;
+}

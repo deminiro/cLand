@@ -423,12 +423,6 @@ body {
   margin: 0
 }
 
-.footer-form__input-name {
-}
-
-.footer-form__input-email {
-}
-
 .footer-form__input-subject {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -449,4 +443,17 @@ body {
   color: #85caD9;
   border: 0;
   margin-top: 51px;
+}
+
+// footer about
+.footer__about {
+  background-color: #111111;
+  @include widthHeight(100%, 89px)
+}
+
+.footer-about__text {
+  color: #fff;
+  margin: 0;
+  padding-left: 7%;
+  padding-top: 31px;
 }

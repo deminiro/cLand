@@ -18,8 +18,14 @@ $purpleColor: #B687BF;
   padding: 0;
 }
 
+button, input {
+  outline: none;
+  border-radius: 5px;
+}
+
 body {
   width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 // header
 .header {
@@ -47,6 +53,11 @@ body {
 
 .header-burger__element>i {
   font-size: 220%;
+}
+
+.header-burger__element>i:hover {
+  color: $purpleColor;
+  transition: .2s
 }
 
 .color-white {
@@ -91,6 +102,11 @@ body {
   border: none
 }
 
+.header-autorize__sign-in:hover {
+  color: $purpleColor;
+  transition: .2s
+}
+
 .header-autorize__sign-up {
   margin-left: 21px;
   @include widthHeight(136px, 43px);
@@ -98,6 +114,10 @@ body {
   border: none;
 }
 
+.header-autorize__sign-up:hover {
+  background-color: #9C75A3;
+  transition: .2s
+}
 // main
 // top
 .main-top__container {
@@ -140,6 +160,12 @@ body {
   border-radius: 3px;
   background-color: #fff;
   color: $lightblueColor;
+}
+
+.main-top__button:hover {
+  background-color: $purpleColor;
+  color: #fff;
+  transition: ease .2s
 }
 
 .main-top__examples {
@@ -220,6 +246,11 @@ body {
   color: #fff;
   border: 0;
   border-radius: 4px;
+}
+
+.main-awards__button:hover {
+  background-color: #9C75A3;
+  transition: .2s
 }
 
 // amazing awards
@@ -413,10 +444,19 @@ body {
   background-color: #85caD9;
   border-bottom: 2px solid #D7E8EF;
   font-size: 20px;
+  padding-left: 1%
 }
 
 .footer-form__inputs::placeholder {
   color: #D7E8EF;
+}
+
+.footer-form__inputs:focus {
+  border-bottom: 2px solid $purpleColor;
+  color: $purpleColor;
+  .footer-form__inputs::placeholder {
+    color: $purpleColor;
+  }
 }
 
 .footer-form__headline {
@@ -445,6 +485,11 @@ body {
   margin-top: 51px;
 }
 
+.footer-form__button:hover {
+  background-color: $purpleColor;
+  color: #fff;
+  transition: .2s
+}
 // footer about
 .footer__about {
   background-color: #111111;
@@ -456,4 +501,5 @@ body {
   margin: 0;
   padding-left: 7%;
   padding-top: 31px;
+  font-size: 19px
 }
